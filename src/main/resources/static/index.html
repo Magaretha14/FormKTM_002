@@ -6,11 +6,56 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Form KTM</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #pfieldset{
+                background-color: #FFDEB4;
+                display: inline-block;
+            }
+        </style>
     </head>
     <body>
-        <div>TODO write content</div>
+        <center>
+            <h1>FORM KTM</h1>
+        </center>
+        <hr/>
+        <center>
+        <form action="/hiling" method="POST" enctype="multipart/form-data">
+            <fieldset id="pfieldset" style="width: 350px">
+                <legend>Data Mahasiswa</legend>
+                <p id="pnama" style="float: left">
+                    <label>Nama : </label>
+                    <input type="text" name="nama"/>
+                </p>
+                <br/>
+                <p id="plok" style="float: left">
+                    <label>NIM : </label>
+                    <input type="text" name="lokasi"/>
+                </p>
+                <br/>
+                <p id="pjrsn" style="float: left">
+                    <label>Jurusan : </label>
+                    <input type="text" name="jurusan"/>
+                </p>
+                </br>
+                <p id="email" style="float: left">
+                    <label>Email UMY : </label>
+                    <input type="text" name="email"/>
+                </p>
+                </br>
+                <p id="pgmbr" style="float: left">
+                    <label style="float: left">Pilih Gambar : </label>
+                    <input type="file" name="gambar" accept="image/*" class="form-control-file"/>
+                </p>
+                <br/>
+                <p style="float: right">
+                    <input type="submit" value="SAVE" id="pbtn"/>
+                </p>
+            </fieldset>
+            
+        </form>
+        </center>
     </body>
 </html>

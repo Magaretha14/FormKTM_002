@@ -12,19 +12,38 @@ and open the template in the editor.
     </head>
     <body>
         <center>
-            <h1 th:text="${paketnama}"></h1>
+            <h1>KTM</h1>
         </center>
         <hr/>
         <center>
         <fieldset id="pfieldset">
-            <legend>Lokasi Wisata</legend>
             <p id="pnama">
-                Nama : <l th:text="${paketnama}"></l>
+                Nama : <l th:text="${pktnama}"></l>
             </p>
             <br/>
             
             <p id="plok">
-                Lokasi : <l th:text="${paketlokasi}"></l>
+                NIM : <l th:text="${pktnim}"></l>
+            </p>
+            <br/>
+            
+            <p id="plok">
+                Tempat Lahir : <l th:text="${pkttempat}"></l>
+            </p>
+            <br/>
+            
+            <p id="plok">
+                Tanggal Lahir : <l th:text="${pkttgl}"></l>
+            </p>
+            <br/>
+            
+            <p id="plok">
+                Jurusan : <l th:text="${pktjrsn}"></l>
+            </p>
+            <br/>
+            
+            <p id="plok">
+                Email : <l th:text="${pktemail}"></l>
             </p>
             <br/>
             
@@ -33,7 +52,7 @@ and open the template in the editor.
                 <br/>
             </p>
             <center>
-                <img th:src="${msg}"/>
+                <img th:src="${pic}"/>
             </center>
             
         </fieldset>

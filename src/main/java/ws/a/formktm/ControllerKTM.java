@@ -5,10 +5,13 @@
  */
 package ws.a.formktm;
 
+import org.springframework.stereotype.Controller;
+
 /**
  *
  * @author ASUS
  */
+@Controller
 public class ControllerKTM {
     
 }

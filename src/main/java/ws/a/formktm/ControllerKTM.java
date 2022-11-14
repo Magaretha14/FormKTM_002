@@ -36,7 +36,7 @@ public class ControllerKTM {
         @RequestParam(value = "gambar") MultipartFile img,
             Model kurir
     ) throws IOException{
-        SimpleDateFormat newTanggal = new SimpleDateFormat("EE-dd-MMMM-yyyy");
+        SimpleDateFormat newTanggal = new SimpleDateFormat("dd-MM-yyyy");
         
         String tanggalku = newTanggal.format(date);
         

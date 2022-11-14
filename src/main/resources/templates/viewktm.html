@@ -9,6 +9,15 @@ and open the template in the editor.
         <title>Display KTM</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #pfieldset{
+                background-color: #FFDEB4;
+            }
+            #pisi{
+                
+                text-align: left;
+            }
+        </style>
     </head>
     <body>
         <center>
@@ -16,45 +25,27 @@ and open the template in the editor.
         </center>
         <hr/>
         <center>
-        <fieldset id="pfieldset">
-            <p id="pnama">
-                Nama : <l th:text="${pktnama}"></l>
+        <fieldset id="pfieldset" style="width: 480px">
+            <div>
+            <p id="pnama" style="float: right" >
+                <img style="float: right; width: 200px" th:src="${pic}"/><br><br>
             </p>
-            <br/>
-            
-            <p id="plok">
-                NIM : <l th:text="${pktnim}"></l>
+            <p id="pisi">
+                Nama : <l th:text="${pktnama}"></l><br>
             </p>
-            <br/>
-            
-            <p id="plok">
-                Tempat Lahir : <l th:text="${pkttempat}"></l>
+            <p id="pisi">
+                NIM : <l th:text="${pktnim}"></l><br>
             </p>
-            <br/>
-            
-            <p id="plok">
-                Tanggal Lahir : <l th:text="${pkttgl}"></l>
+            <p id="pisi">
+                TTL : <l th:text="${pkttempat}"></l>
+                , <l th:text="${pkttgl}"></l><br>
             </p>
-            <br/>
-            
-            <p id="plok">
-                Jurusan : <l th:text="${pktjrsn}"></l>
+            <p id="pisi">
+                Jurusan : <l th:text="${pktjrsn}"></l><br>
             </p>
-            <br/>
-            
-            <p id="plok">
+            <p id="pisi">
                 Email : <l th:text="${pktemail}"></l>
             </p>
-            <br/>
-            
-            <p id="pgmbr">
-                Gambar :
-                <br/>
-            </p>
-            <center>
-                <img th:src="${pic}"/>
-            </center>
-            
         </fieldset>
         </center> 
     </body>

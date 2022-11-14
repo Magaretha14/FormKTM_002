@@ -11,40 +11,48 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             #pfieldset{
-                background-color: #FFDEB4;
+                background-color: #EFF5F5;
             }
             #pisi{
                 
                 text-align: left;
             }
+            h1{
+                color: #004D40;
+                font: 10px;
+                margin: 15px 0px 0px 20px;
+                padding: 0px 0px 0px 15px;
+            }
         </style>
     </head>
     <body>
-        <center>
-            <h1>KTM</h1>
-        </center>
+        <img src="logo.png" style="float: left" />
+        <h1>KTM</h1>
+        <br/> 
         <hr/>
         <center>
-        <fieldset id="pfieldset" style="width: 480px">
+        <fieldset id="pfieldset" style="width: 400px">
+            <img src="logo.png"/>
+            <hr/>
             <div>
             <p id="pnama" style="float: right" >
                 <img style="float: right; width: 200px" th:src="${pic}"/><br><br>
             </p>
             <p id="pisi">
-                Nama : <l th:text="${pktnama}"></l><br>
+                <l th:text="${pktnama}"></l><br>
             </p>
             <p id="pisi">
-                NIM : <l th:text="${pktnim}"></l><br>
+                <l th:text="${pktnim}"></l><br>
             </p>
             <p id="pisi">
-                TTL : <l th:text="${pkttempat}"></l>
+                <l th:text="${pkttempat}"></l>
                 , <l th:text="${pkttgl}"></l><br>
             </p>
             <p id="pisi">
-                Jurusan : <l th:text="${pktjrsn}"></l><br>
+                <l th:text="${pktjrsn}"></l><br>
             </p>
             <p id="pisi">
-                Email : <l th:text="${pktemail}"></l>
+                <l th:text="${pktemail}"></l>
             </p>
         </fieldset>
         </center> 

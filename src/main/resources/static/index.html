@@ -11,20 +11,26 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             #pfieldset{
-                background-color: #FFDEB4;
+                background-color: #D6E4E5;
                 display: inline-block;
+            }
+            h1{
+                color: #004D40;
+                font: 10px;
+                margin: 15px 0px 0px 20px;
+                padding: 0px 0px 0px 15px;
             }
         </style>
     </head>
     <body>
-        <center>
-            <h1>FORM KTM</h1>
-        </center>
+        <img src="logo.png" style="float: left" />
+        <h1>KTM</h1>
+        <br/>    
         <hr/>
         <center>
         <form action="/showform" method="POST" enctype="multipart/form-data">
-            <fieldset id="pfieldset" style="width: 350px">
-                <legend>Data Mahasiswa</legend>
+            <fieldset id="pfieldset" style="width: 350px; box-shadow: 3px 3px 5px rgba(0,0,0,0.4)">
+                <h1>FORM KTM</h1>
                 <p id="pnama" style="float: left">
                     <label>Nama : </label>
                     <input type="text" name="nama"/>
@@ -61,7 +67,7 @@ and open the template in the editor.
                 </p>
                 <br/>
                 <p style="float: right">
-                    <input type="submit" value="SAVE" id="pbtn"/>
+                    <input type="submit" value="SAVE" id="pbtn" style="width: 100px; height: 30px; font-size: 15pt; color: white; background-color: #0088D8"/>
                 </p>
             </fieldset>
             
